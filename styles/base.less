@@ -358,6 +358,23 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 }
 
+.syntax--json{
+  .syntax--meta{
+    color: @light-blue;
+    .syntax--string{
+      color: @pink;
+      .syntax--punctuation{
+        color: @light-blue;
+      }
+    }
+    .syntax--value{
+      .syntax--string{
+        color: @blue;
+      }
+    }
+  }
+}
+
 // Mini editor
 
 atom-text-editor[mini] .scroll-view {
