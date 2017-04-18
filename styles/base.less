@@ -217,8 +217,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--name.syntax--tag {
-    color: @red;
-    text-decoration: underline;
+    color: @blue;
   }
 
   &.syntax--other.syntax--attribute-name {
@@ -374,6 +373,44 @@ atom-text-editor .search-results .marker.current-result .region {
     }
   }
 }
+
+.syntax--source{
+  &.syntax--css{
+    &.syntax--less{
+      .syntax--unit{
+        color: @pink;
+      }
+      .syntax--tag{
+        color: @orange;
+      }
+      .syntax--property-value{
+        .syntax--variable{
+          color: @light-purple;
+        }
+      }
+      .syntax--property-list{
+        .syntax--property-value{
+          .syntax--numeric,
+          .syntax--unit,
+          .syntax--constant{
+            color: @pink;
+          }
+        }
+      }
+      .syntax--variable{
+        color: @light-purple;
+      }
+    }
+  }
+  .syntax--entity{
+    &.syntax--other{
+      &.syntax--attribute-name{
+        color: @blue;
+      }
+    }
+  }
+}
+
 
 // Mini editor
 
