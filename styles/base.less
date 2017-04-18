@@ -324,11 +324,39 @@ atom-text-editor .search-results .marker.current-result .region {
   }
   .syntax--comment{
     .syntax--fixme{
-      color: @light-blue;
+      color: @light-gray;
     }
   }
 }
 
+
+.syntax--text{
+  .syntax--meta{
+    .syntax--markup{
+      color: @light-cyan;
+    }
+  }
+  .syntax--source{
+    .syntax--string{
+      .syntax--markup{
+        color: @light-cyan;
+      }
+    }
+  }
+  .syntax--entity{
+    &.syntax--name{
+      &.syntax--tag{
+        color: @blue;
+        text-decoration: none;
+      }
+    }
+    &.syntax--other{
+      &.syntax--attribute-name{
+        color: @pink;
+      }
+    }
+  }
+}
 
 // Mini editor
 
