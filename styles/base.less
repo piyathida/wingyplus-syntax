@@ -258,7 +258,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+   color: @orange;
     font-weight: bold;
   }
 
@@ -411,9 +411,17 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 }
 
+// javascript syntax
+.syntax--js {
+  &.syntax--default {
+    color: @blue;
+  }
+}
+
 
 // Mini editor
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }
+ 
